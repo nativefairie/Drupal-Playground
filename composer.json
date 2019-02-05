@@ -25,6 +25,8 @@
         "drupal/devel": "^2.0",
         "drupal/examples": "1.x-dev",
         "drush/drush": "^9.0.0",
+        "symfony/http-foundation": "3.4.x-dev",
+        "symfony/templating": "^4.2",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
