@@ -8,17 +8,41 @@
 
 namespace Drupal\roar\Controller;
 
-use Symfony\Component\HttpFoundation\Response;
+use Drupal\Core\Controller\ControllerBase;
+use Drupal\roar\Jurassic\RoarGenerator;
+use Symfony\Component\DependencyInjection\ContainerInterface;
+//use Symfony\Component\HttpFoundation\Response;
 
-class RoarController
+class RoarController extends ControllerBase
 {
 
-    public function roar()
+    /**
+     * @var RoarGenerator
+     */
+    private $roarGenerator;
+
+    public function __construct(RoarGenerator $roarGenerator)
     {
-        return new Response('ROAR');
-//        return array(
-//            '#markup' => t('ROAR')
-//        );
+
+        $this->roarGenerator = $roarGenerator;
+    }
+
+    public static function create(ContainerInterface $container)
+    {
+        $roarGenerator = $container->get('jurassic_roar.dino_internal');
+        if (!empty($roarGenerator)) {
+            return new static($roarGenerator);
+        } else
+            return new static($roarGenerator);
+    }
+
+
+    public function roar($number)
+    {
+        $roar = $this->roarGenerator->getRoar($number);
+        return array(
+            '#markup' => $roar
+        );
     }
 
 }

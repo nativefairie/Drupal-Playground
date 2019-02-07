@@ -1,0 +1,5 @@
+name: Feedback Form
+type: module
+description: "Enable to see a feedback form for users."
+package: Custom
+core: 8.x
