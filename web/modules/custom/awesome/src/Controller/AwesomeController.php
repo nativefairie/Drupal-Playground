@@ -48,9 +48,13 @@ class AwesomeController extends ControllerBase
             '#theme' => 'table',
             '#header' => array(
                 $this
-                    ->t('id'),
+                    ->t('ID'),
                 $this
-                    ->t('title')
+                    ->t('Time created'),
+                $this
+                    ->t('Author'),
+                $this
+                    ->t('Title')
             ),
 
         ];
@@ -61,7 +65,11 @@ class AwesomeController extends ControllerBase
         foreach($node as $key => $item) {
 
             $rows[$key]['id'] = $item->id();
+            $rows[$key]['time-created'] = format_date($item->getCreatedTime());
+            $account = \Drupal\user\Entity\User::load($item->getOwnerId());
+            $rows[$key]['author'] = $account->getUsername();
             $rows[$key]['title'] = $item->label();
+
         }
         $var['node']['info']['#rows'] = $rows;
 
