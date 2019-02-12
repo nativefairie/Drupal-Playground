@@ -28,5 +28,5 @@ $databases['default']['default'] = array (
 7. Running containers: make up or docker-compose up -d
 Your drupal website should be up and running at [http://sandbox.dev.localhost:81](http://sandbox.dev.localhost:81)
 You can see status of your containers and their logs via portainer: [http://portainer.drupal.docker.localhost:8000](http://portainer.drupal.docker.localhost:8000)
-
+8. Rename development.settings.local.php to settings.local.php and move it to default folder. To execute drush commands you must enter inside the container with exec container-name bash
 
