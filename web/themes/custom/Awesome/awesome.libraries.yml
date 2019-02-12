@@ -1,0 +1,4 @@
+global-styling-and-scripts:
+  css:
+    theme:
+      css/style.css : {}

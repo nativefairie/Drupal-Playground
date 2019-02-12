@@ -1,0 +1,13 @@
+awesome.awesome_controller:
+  path: '/dino/says/{number}'
+  defaults:
+    _controller: '\Drupal\awesome\Controller\AwesomeController::roar'
+  requirements:
+    _permission: 'access content'
+awesome.feedback_form:
+  path: '/feedback'
+  defaults:
+    _form:  '\Drupal\awesome\Form\FeedbackForm'
+    _title: 'Feedback form'
+  requirements:
+    _permission: 'access content'

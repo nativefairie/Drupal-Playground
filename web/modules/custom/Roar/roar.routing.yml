@@ -1,6 +1,0 @@
-jurassic_roar:
-  path: /dino/says/{number}
-  defaults:
-    _controller: Drupal\roar\Controller\RoarController::roar
-  requirements:
-    _permission: 'access content'

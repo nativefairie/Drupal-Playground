@@ -1,0 +1,5 @@
+name: 'awesome'
+type: module
+description: 'functionality ++'
+core: 8.x
+package: 'Custom'

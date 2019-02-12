@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains awesome.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function awesome_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the awesome module.
+    case 'help.page.awesome':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('functionality ++') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function awesome_theme() {
+  return [
+    'awesome' => [
+      'render element' => 'children',
+    ],
+  ];
+}

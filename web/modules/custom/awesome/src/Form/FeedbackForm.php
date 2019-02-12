@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\feedback\Form;
+namespace Drupal\awesome\Form;
 
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
@@ -20,7 +20,7 @@ class FeedbackForm extends FormBase
      */
     public function getFormId()
     {
-        return 'feedback_form';
+        return 'feedback';
     }
 
     /**
@@ -85,6 +85,14 @@ class FeedbackForm extends FormBase
         );
         return $form;
     }
+
+    public function validateForm(array &$form, FormStateInterface $form_state)
+    {
+        if (strlen($form_state->getValue('feedback')) < 10) {
+            $form_state->setErrorByName('feedback', $this->t('Your feedback is too short. Please be more specific.'));
+        }
+    }
+
 
     /**
      * Form submission handler.

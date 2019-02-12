@@ -1,5 +1,0 @@
-name: Roar Module
-type: module
-description: "Type a number between 1 and 100 and see if you got the number I was thinking at"
-package: Custom
-core: 8.x
