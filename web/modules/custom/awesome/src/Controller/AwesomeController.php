@@ -10,6 +10,7 @@ namespace Drupal\awesome\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\awesome\Jurassic\RoarGenerator;
+use Drupal\examples\Utility\DescriptionTemplateTrait;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -37,43 +38,85 @@ class AwesomeController extends ControllerBase
             return new static($roarGenerator);
     }
 
-
+    use DescriptionTemplateTrait;
+    /**
+     * {@inheritdoc}
+     */
+    protected function getModuleName() {
+        return 'field_url';
+    }
     public function roar($number)
     {
         $roar = $this->roarGenerator->getRoar($number);
-
-        $var['node']['info'] = [
-            '#markup' => '<h1>Article Info </h1>',
+//        $renderer = \Drupal::service('renderer');
+//
+//        $config = \Drupal::config('system.site');
+//        $current_user = \Drupal::currentUser();
+        $build = [
             '#title' => 'Article Info',
-            '#theme' => 'table',
-            '#header' => array(
-                $this
-                    ->t('ID'),
-                $this
-                    ->t('Time created'),
-                $this
-                    ->t('Author'),
-                $this
-                    ->t('Title')
+            '#prefix' => '<div id="page_wrapper">',
+            '#suffix' => '</div>',
+            'initial' => array
+            (
+                '#markup' => $roar
             ),
+            'table' => array
+            (
+                '#theme' =>  'table',
+            ),
+            'list' => array
+            (
+                '#theme' =>  'awesome',
+                '#prefix' => '<div id="list_wrapper">',
+                '#suffix' => '</div>',
+            ),
+            'field' => array
+            (
+                '#prefix' => '<div id="field_wrapper">',
+                '#suffix' => '</div>',
+                '#theme' => 'item_list',
+                '#list_type' => 'ul',
+                '#items' => []
+            ),
+            'plain' => array
+            (
+                '#markup' => t('The coolest @time', ['@time' => time()]),
+                '#cache' => [
+                    'max-age' => 10,
+                ]
+            )
 
         ];
+
         $rows = [];
+        $header = array($this->t('ID'), $this->t('Time created'), $this->t('Author'), $this->t('Title'));
+
         $node_storage = \Drupal::entityTypeManager()->getStorage('node');
         $node = $node_storage->loadMultiple();
-
-        foreach($node as $key => $item) {
-
+        foreach($node as $key => $item)  {
             $rows[$key]['id'] = $item->id();
             $rows[$key]['time-created'] = format_date($item->getCreatedTime());
             $account = \Drupal\user\Entity\User::load($item->getOwnerId());
             $rows[$key]['author'] = $account->getUsername();
             $rows[$key]['title'] = $item->label();
+            if($item->hasField('field_url')!=null)
+                $build['field']['#items'][$key] = $item->field_url->uri;
 
         }
-        $var['node']['info']['#rows'] = $rows;
 
-        return $var['node']['info'];
+        $build['table']['#rows'] = $rows;
+        $build['table']['#header'] = $header;
+        $build['table']['#theme'] = 'table';
+        $build['list']['#theme'] = 'awesome';
+        $build['#attached']['library'][] = 'awesome/awesome_libraries';
+        $build['list']['#rows'] = $rows;
+        $build['list']['#header'] = $header;
+
+//        dd($this->cache();
+
+
+
+        return $build;
     }
 
 }

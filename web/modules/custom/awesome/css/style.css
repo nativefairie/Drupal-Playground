@@ -1,0 +1,22 @@
+li {
+  list-style: none;
+}
+
+* {
+  color: gray;
+}
+
+h1, h2, h3, h4 {
+  color: #b388ff;
+}
+
+#page_wrapper {
+  background-color: #e2ff69;
+}
+
+#list_wrapper {
+  background-color: #abffe0;
+}
+#field_wrapper {
+  background-color: #ffc9c9;
+}

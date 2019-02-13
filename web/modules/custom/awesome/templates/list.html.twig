@@ -65,39 +65,13 @@
  *   in different view modes.
  */
 #}
-{%
-  set classes = [
-    node.bundle|clean_class,
-    node.isPromoted() ? 'is-promoted',
-    node.isSticky() ? 'is-sticky',
-    not node.isPublished() ? 'is-unpublished',
-    view_mode ? view_mode|clean_class,
-    'clearfix',
-  ]
-%}
-<article{{ attributes.addClass(classes) }}>
 
-  {#{{ title_prefix }}#}
-  {#{% if not page %}#}
-    {#<h2{{ title_attributes }}>#}
-      {#<a href="{{ url }}" rel="bookmark">{{ label }}</a>#}
-    {#</h2>#}
-  {#{% endif %}#}
-  {#{{ title_suffix }}#}
-
-  {#{% if display_submitted %}#}
-    {#<footer>#}
-      {#{{ author_picture }}#}
-      {#<div{{ author_attributes.addClass('author') }}>#}
-        {#{% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}#}
-        {#{{ metadata }}#}
-      {#</div>#}
-    {#</footer>#}
-  {#{% endif %}#}
-
-  {#<div{{ content_attributes.addClass('content') }}>#}
-    {#{{ content }}#}
-  {#</div>#}
-  <p>YELLOOOOW!</p>
-
-</article>
+{% for key, value in rows %}
+    <h3>Article {{ key }}</h3>
+    <ul>
+        <li>{{ header[0] }} : {{ value.id }}</li>
+        <li>{{ header[1] }} : {{ value.time-created }}</li>
+        <li>{{ header[2] }} : {{ value.author }}</li>
+        <li>{{ header[3] }} : {{ title }}</li>
+    </ul>
+{% endfor %}

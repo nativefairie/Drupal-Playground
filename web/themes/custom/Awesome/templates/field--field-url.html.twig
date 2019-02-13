@@ -1,0 +1,5 @@
+<p>This is where we got the inspiration from:</p>
+{% for item in items %}
+    {{ item.content['#title'] }}
+{% endfor %}
+{{ kint(items[0]) }}
