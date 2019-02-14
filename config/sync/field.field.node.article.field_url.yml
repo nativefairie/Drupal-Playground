@@ -1,0 +1,23 @@
+uuid: e74f412a-4674-4fc3-bef6-41c2bcadb509
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url
+    - node.type.article
+  module:
+    - link
+id: node.article.field_url
+field_name: field_url
+entity_type: node
+bundle: article
+label: URL
+description: 'Instructions to present to the user below this field on the editing form.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

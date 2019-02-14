@@ -38,13 +38,6 @@ class AwesomeController extends ControllerBase
             return new static($roarGenerator);
     }
 
-    use DescriptionTemplateTrait;
-    /**
-     * {@inheritdoc}
-     */
-    protected function getModuleName() {
-        return 'field_url';
-    }
     public function roar($number)
     {
         $roar = $this->roarGenerator->getRoar($number);
