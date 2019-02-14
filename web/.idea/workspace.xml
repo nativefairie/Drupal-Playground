@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ddb7cf5-5015-4b46-b5e2-817ad396e0d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/../composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/sync/core.entity_view_display.node.article.rss.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config/sync/core.entity_view_display.node.article.rss.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/sync/core.entity_view_display.node.article.teaser.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config/sync/core.entity_view_display.node.article.teaser.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/sync/core.extension.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config/sync/core.extension.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/contrib/devel/src/Controller/EntityDebugController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/contrib/devel/src/Controller/EntityDebugController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/contrib/devel/src/Controller/SwitchUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/contrib/devel/src/Controller/SwitchUserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/contrib/devel/webprofiler/templates/Collector/request.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/modules/contrib/devel/webprofiler/templates/Collector/request.html.twig" afterDir="false" />
@@ -37,7 +37,6 @@
       <change beforePath="$PROJECT_DIR$/modules/contrib/examples/tablesort_example/src/Controller/TableSortExampleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/contrib/examples/tablesort_example/src/Controller/TableSortExampleController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/contrib/examples/testing_example/src/Controller/TestingExampleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/contrib/examples/testing_example/src/Controller/TestingExampleController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/contrib/examples/tour_example/src/Controller/TourExampleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/contrib/examples/tour_example/src/Controller/TourExampleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/custom/awesome/src/Controller/AwesomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/custom/awesome/src/Controller/AwesomeController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +112,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/custom/awesome/src/Controller/AwesomeController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="295">
@@ -123,6 +122,15 @@
                 <element signature="e#128#170#0#PHP" expanded="true" />
                 <marker date="1550144732439" expanded="true" signature="3276:3287" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../config/sync/core.extension.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -438,12 +446,12 @@
       <workItem from="1549524293168" duration="8433000" />
       <workItem from="1549875975177" duration="11829000" />
       <workItem from="1549964383728" duration="60629000" />
-      <workItem from="1550138117085" duration="2915000" />
+      <workItem from="1550138117085" duration="3776000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111781000" />
+    <option name="totallyTimeSpent" value="112642000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -456,9 +464,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="1214" height="1171" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25684932" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25684932" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.26930693" />
@@ -470,14 +477,14 @@
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49743152" weight="0.32871288" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49474266" visible="true" weight="0.43762377" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49474266" weight="0.43762377" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5052573" side_tool="true" weight="0.2864031" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.4980631" weight="0.32806325" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="12" sideWeight="0.4980631" visible="true" weight="0.32772276" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.27825344" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.24486302" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20420587" />
@@ -504,6 +511,32 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -526,13 +559,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/contrib/examples/render_example/templates/render-array.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/contrib/examples/render_example/render_example.routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -844,6 +870,13 @@
             <element signature="e#128#170#0#PHP" expanded="true" />
             <marker date="1550144732439" expanded="true" signature="3276:3287" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../config/sync/core.extension.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
         </state>
       </provider>
     </entry>
