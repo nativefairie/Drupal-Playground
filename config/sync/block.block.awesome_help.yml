@@ -1,0 +1,22 @@
+uuid: d220c148-6014-430c-9ab2-ac02bf1b9b5b
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - awesome
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: awesome_help
+theme: awesome
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

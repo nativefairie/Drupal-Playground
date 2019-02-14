@@ -1,0 +1,22 @@
+uuid: 9d2f4808-11be-4f76-8042-7be85ab47335
+langcode: en
+status: true
+dependencies:
+  theme:
+    - awesome
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: awesome_local_tasks
+theme: awesome
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

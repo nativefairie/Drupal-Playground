@@ -1,0 +1,20 @@
+uuid: 283de81b-5aee-4ff6-b804-c5a6a1cceb4d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - awesome
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: awesome_page_title
+theme: awesome
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

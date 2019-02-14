@@ -1,0 +1,20 @@
+uuid: db2883fa-aa93-4133-a94b-3abe84de4ccc
+langcode: en
+status: true
+dependencies:
+  theme:
+    - awesome
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: awesome_local_actions
+theme: awesome
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
