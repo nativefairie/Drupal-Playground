@@ -1,0 +1,7 @@
+id, uuid, title, field_url_uri, field_url_title, body, fid
+"1", "382a7740-3138-11e9-b210-d663bd873d93", "News this week", "http://example.com/", "Wiki", "body.txt", "1"
+"2", "382a79e8-3138-11e9-b210-d663bd873d93", "NASA announces", "http://example.com/", "Google", "body.txt", "2"
+"3", "382a7b3c-3138-11e9-b210-d663bd873d93", "First rocket to the moon after 60 years", "http://example.com/", "Wiki", "body.txt", "3"
+
+
+

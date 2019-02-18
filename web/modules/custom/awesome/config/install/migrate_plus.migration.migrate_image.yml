@@ -1,0 +1,49 @@
+dependencies:
+  module:
+    - file
+id: migrate_image
+migration_group: test
+delimiter: ','
+enclosing: '"'
+
+source:
+  plugin: csv
+  path: modules/custom/awesome/data/image.csv
+  header_row_count: 1
+  keys:
+    - id
+  column_names:
+    0:
+      id: id
+    1:
+      uuid: uuid
+    2:
+      uid: uid
+    3:
+      filename: photo.jpg
+    4:
+      filepath: path to file
+    5:
+      filemime: type
+  constants:
+    final_uri: 'public://photo'
+process:
+  filename: filename
+  uuid: uuid
+  uid: uid
+  source_full_path:
+      plugin: urlencode
+      source: filepath
+  uri_file:
+      plugin: urlencode
+      source: constants/final_uri
+  uri:
+    plugin: file_copy
+    source:
+      - '@source_full_path'
+      - '@uri_file'
+destination:
+  plugin: 'entity:file'
+migration_dependencies:
+  required: {  }
+  optional: {  }

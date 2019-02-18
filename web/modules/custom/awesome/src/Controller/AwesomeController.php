@@ -75,7 +75,7 @@ class AwesomeController extends ControllerBase
             (
                 '#markup' => t('The coolest @time', ['@time' => time()]),
                 '#cache' => [
-                    'max-age' => 10,
+                  'max-age' => 10,
                 ]
             )
 

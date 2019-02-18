@@ -1,0 +1,52 @@
+id: migrate_article
+label: Migrate the CSV containing 3 articles.
+migration_group: test
+delimiter: ','
+enclosing: '"'
+
+source:
+  plugin: csv
+  path: 'modules/custom/awesome/data/data.csv'
+  header_row_count: 1
+  keys:
+    - id
+  column_names:
+    0:
+      id: id
+    1:
+      uuid: universally unique identifier
+    2:
+      title: node title
+    3:
+      field_url_uri: url
+    4:
+      field_url_title: description or label
+    5:
+      body: node body
+    6:
+      fid: image in node file id
+process:
+  nid: nid
+  vid: vid
+  title: title
+  body/value:
+    plugin: awesome_load_content_from_file
+    folder: 'modules/custom/awesome/data'
+    source: body
+  field_url/uri:
+    plugin: urlencode
+    source: field_url_uri
+  field_url/title: field_url_title
+  type:
+    plugin: default_value
+    default_value: article
+  field_image/target_id:
+      plugin: migration_lookup
+      migration: migrate_image
+      source: fid
+destination:
+  plugin: entity:node
+migration_dependencies:
+  required: {}
+  optional:
+    - migrate_image

@@ -6,3 +6,6 @@ services:
     arguments:
       - '@keyvalue'
       - '%dino.roar.use_key_val_cache'
+  timestamp:
+    class: Drupal\awesome\Jurassic\UserTimeGenerator
+    arguments: []
