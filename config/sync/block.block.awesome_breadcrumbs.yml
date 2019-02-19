@@ -1,6 +1,6 @@
 uuid: fd90fefd-8eb9-4ac7-9971-169291820e4d
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,7 +10,7 @@ _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
 id: awesome_breadcrumbs
 theme: awesome
-region: navigation
+region: sidebar_first
 weight: 0
 provider: null
 plugin: system_breadcrumb_block

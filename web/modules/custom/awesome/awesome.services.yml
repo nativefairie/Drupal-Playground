@@ -9,3 +9,7 @@ services:
   timestamp:
     class: Drupal\awesome\Jurassic\UserTimeGenerator
     arguments: []
+  awesome_controller_override_node.route_subscriber:
+    class: Drupal\awesome\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }

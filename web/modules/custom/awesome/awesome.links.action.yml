@@ -1,0 +1,8 @@
+awesome_content_entity.add:
+  route_name: awesome_content_entity.add
+  title: 'Add Awesome Entity'
+  appears_on:
+    - entity.awesome_content_entity.collection
+    - entity.awesome_content_entity.canonical
+    - node.type_add
+    - node.add_page

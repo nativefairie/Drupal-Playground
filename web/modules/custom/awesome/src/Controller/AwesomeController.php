@@ -14,6 +14,7 @@ use Drupal\examples\Utility\DescriptionTemplateTrait;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\Response;
 
+
 class AwesomeController extends ControllerBase
 {
 
@@ -75,7 +76,7 @@ class AwesomeController extends ControllerBase
             (
                 '#markup' => t('The coolest @time', ['@time' => time()]),
                 '#cache' => [
-                  'max-age' => 10,
+                  'contexts' => ['languages'],
                 ]
             )
 
@@ -108,8 +109,8 @@ class AwesomeController extends ControllerBase
 //        dd($this->cache();
 
 
-
-        return $build;
+      \Drupal :: logger ( 'awesome' ) -> debug( 'Info message' ) ;
+      return $build;
     }
 
 }

@@ -1,6 +1,6 @@
 uuid: 550e2bd3-0f6a-4601-92ef-96d98076f834
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer
@@ -12,7 +12,7 @@ _core:
   default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
 id: awesome_footer
 theme: awesome
-region: navigation
+region: sidebar_first
 weight: 0
 provider: null
 plugin: 'system_menu_block:footer'

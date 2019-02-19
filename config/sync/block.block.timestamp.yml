@@ -1,0 +1,28 @@
+uuid: 6c57b4e9-fa52-42f6-a213-f747da27afc1
+langcode: en
+status: true
+dependencies:
+  module:
+    - awesome
+    - node
+  theme:
+    - awesome
+id: timestamp
+theme: awesome
+region: sidebar_first
+weight: 0
+provider: null
+plugin: timestamp
+settings:
+  id: timestamp
+  label: Timestamp
+  provider: awesome
+  label_display: visible
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

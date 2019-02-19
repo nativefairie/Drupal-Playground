@@ -1,0 +1,24 @@
+uuid: c0aefe5c-37de-4f93-8045-746f2bff8e1d
+langcode: ro
+status: true
+dependencies:
+  config:
+    - field.storage.awesome_content_entity.field_ireal
+  module:
+    - awesome
+id: awesome_content_entity.awesome_content_entity.field_ireal
+field_name: field_ireal
+entity_type: awesome_content_entity
+bundle: awesome_content_entity
+label: Ireal
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

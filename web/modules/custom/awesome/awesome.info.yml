@@ -10,3 +10,4 @@ dependencies:
   - migrate_source_csv
   - node
   - block
+  - options

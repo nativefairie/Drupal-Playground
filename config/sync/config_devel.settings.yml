@@ -1,0 +1,10 @@
+auto_import:
+  -
+    filename: modules/custom/awesome/config/install/migrate_plus.migration.migrate_article.yml
+    hash: ''
+  -
+    filename: modules/custom/awesome/config/install/migrate_plus.migration.migrate_image.yml
+    hash: ''
+auto_export: {  }
+_core:
+  default_config_hash: W4OGMJ9g0nIliU6O4quijGqNLQuWFixbxzi1Fytx6lk

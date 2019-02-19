@@ -1,0 +1,52 @@
+uuid: 3667e212-33cf-4653-84b6-f838175951ce
+langcode: en
+status: true
+dependencies: {  }
+id: migrate_image
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: test
+label: null
+source:
+  plugin: csv
+  path: modules/custom/awesome/data/image.csv
+  header_row_count: 1
+  keys:
+    - id
+  column_names:
+    -
+      id: id
+    -
+      uuid: uuid
+    -
+      uid: uid
+    -
+      filename: photo.jpg
+    -
+      filepath: 'path to file'
+    -
+      filemime: type
+  constants:
+    final_uri: 'public://photo'
+process:
+  filename: filename
+  uuid: uuid
+  uid: uid
+  source_full_path:
+    plugin: urlencode
+    source: filepath
+  uri_file:
+    plugin: urlencode
+    source: constants/final_uri
+  uri:
+    plugin: file_copy
+    source:
+      - '@source_full_path'
+      - '@uri_file'
+destination:
+  plugin: 'entity:file'
+migration_dependencies:
+  required: {  }
+  optional: {  }

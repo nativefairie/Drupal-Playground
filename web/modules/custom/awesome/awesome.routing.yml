@@ -11,3 +11,60 @@ awesome.feedback_form:
     _title: 'Feedback form'
   requirements:
     _permission: 'access content'
+
+# I hereby declare this the land of awesome content entity
+
+entity.awesome_content_entity.canonical:
+  path: '/awesome/{awesome_content_entity}'
+  defaults:
+    # Calls the view controller, defined in the annotation of the awesome entity
+    _entity_view: 'awesome_content_entity'
+    _title: 'Awesome Content Entity'
+  requirements:
+    # Calls the access controller of the entity, $operation 'view'
+    _entity_access: 'awesome_content_entity.view'
+
+entity.awesome_content_entity.collection:
+  path: '/awesome/list'
+  defaults:
+    # Calls the list controller, defined in the annotation of the awesome entity.
+    _entity_list: 'awesome_content_entity'
+    _title: 'Awesome List'
+  requirements:
+    # Checks for permission directly.
+    _permission: 'view awesome entity'
+
+awesome_content_entity.add:
+  path: '/node/add/awesome'
+  defaults:
+    # Calls the form.add controller, defined in the awesome entity.
+    _entity_form: awesome_content_entity.add
+    _title: 'Add Awesome Content'
+  requirements:
+    _entity_create_access: 'awesome_content_entity'
+
+entity.awesome_content_entity.edit_form:
+  path: '/node/{awesome_content_entity}/edit'
+  defaults:
+    # Calls the form.edit controller, defined in the awesome entity.
+    _entity_form: awesome_content_entity.edit
+    _title: 'Edit Awesome Content Entity'
+  requirements:
+    _entity_access: 'awesome_content_entity.edit'
+
+entity.awesome_content_entity.delete_form:
+  path: '/node/{awesome_content_entity}/delete'
+  defaults:
+    # Calls the form.delete controller, defined in the awesome entity.
+    _entity_form: awesome_content_entity.delete
+    _title: 'Delete Awesome Content Entity'
+  requirements:
+    _entity_access: 'awesome_content_entity.delete'
+
+awesome_content_entity.awesome_settings:
+  path: 'admin/structure/awesome_content_entity_settings'
+  defaults:
+    _form: '\Drupal\awesome\Form\AwesomeContentEntitySettingsForm'
+    _title: 'Awesome Content Entity Settings'
+  requirements:
+    _permission: 'administer awesome entity'

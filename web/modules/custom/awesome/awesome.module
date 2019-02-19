@@ -1,8 +1,9 @@
 <?php
 
+
 /**
  * @file
- * Contains awesome.module.
+ * Contains Drupal\awesome\awesome.module.
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;

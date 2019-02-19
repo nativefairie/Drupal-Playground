@@ -1,0 +1,10 @@
+entity.awesome_content_entity.collection:
+  title: Awesome Listing
+  route_name: entity.awesome_content_entity.collection
+  description: 'List Awesome entities'
+  weight: 10
+awesome_content_entity.admin.structure.settings:
+  title: Awesome Settings
+  route_name: awesome_content_entity.awesome_settings
+  description: 'Configure Awesome entity'
+  parent: system.admin_structure

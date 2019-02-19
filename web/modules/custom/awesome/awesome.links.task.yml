@@ -1,0 +1,20 @@
+awesome.settings_tab:
+  route_name: awesome_content_entity.awesome_settings
+  title: Settings
+  base_route: awesome_content_entity.awesome_settings
+
+awesome.view:
+  route_name: awesome_content_entity.canonical
+  base_route: awesome_content_entity.canonical
+  title: View
+
+awesome.page_edit:
+  route_name: awesome_content_entity.edit
+  base_route: awesome_content_entity.canonical
+  title: Edit
+
+awesome.delete_confirm:
+  route_name:  awesome_content_entity.delete
+  base_route:  enawesome_content_entity.canonical
+  title: Delete
+  weight: 10

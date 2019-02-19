@@ -1,0 +1,56 @@
+uuid: 7c3f861c-4e80-4f79-930c-749b56f779f7
+langcode: ro
+status: true
+dependencies:
+  config:
+    - field.field.awesome_content_entity.awesome_content_entity.field_ireal
+  module:
+    - awesome
+    - user
+id: awesome_content_entity.awesome_content_entity.default
+targetEntityType: awesome_content_entity
+bundle: awesome_content_entity
+mode: default
+content:
+  definition:
+    label: above
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_ireal:
+    weight: -1
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  name:
+    label: above
+    type: string
+    weight: -6
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  role:
+    label: above
+    type: string
+    weight: -2
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: above
+    type: author
+    weight: -3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,18 @@
+uuid: 2deee084-4c02-4121-920d-61f98faec8aa
+langcode: ro
+status: true
+dependencies:
+  module:
+    - awesome
+id: awesome_content_entity.field_ireal
+field_name: field_ireal
+entity_type: awesome_content_entity
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
