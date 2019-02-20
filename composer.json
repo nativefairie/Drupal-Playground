@@ -72,6 +72,9 @@
         ]
     },
     "extra": {
+        "patches": {
+            "drupal/config_devel": "patches/TaskNameId.txt"
+        },
         "composer-exit-on-patch-failure": true,
         "patchLevel": {
             "drupal/core": "-p2"

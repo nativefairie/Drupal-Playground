@@ -6,4 +6,4 @@ parameters:
 services:
   monolog.handler.rotating_file:
     class: Monolog\Handler\RotatingFileHandler
-    arguments: ['public://logs/monolog-debug.log', 10, 'monolog.level.info']
+    arguments: ['private://logs/monolog-debug.log', 10, 'monolog.level.info']

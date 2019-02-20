@@ -1,0 +1,21 @@
+diff --git a/devel.module b/devel.module
+index 6364d2b..294f6de 100644
+--- a/devel.module
++++ b/devel.module
+@@ -4,8 +4,16 @@
+  * @file
+  * This module holds functions useful for Drupal development.
+  * Please contribute!
++ *
++ * Testing patches!
++ *
++ *
+  */
+ 
++
++
++
++
+ define('DEVEL_ERROR_HANDLER_NONE', 0);
+ define('DEVEL_ERROR_HANDLER_STANDARD', 1);
+ define('DEVEL_ERROR_HANDLER_BACKTRACE_KINT', 2);
