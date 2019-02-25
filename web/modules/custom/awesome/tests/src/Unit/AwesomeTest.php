@@ -1,8 +1,9 @@
 <?php
-namespace Drupal\awesome\tests\Unit;
+namespace Drupal\awesome\tests\src\Unit;
 
-use Drupal\Tests\UnitTestCase;
 use Drupal\awesome\Jurassic\RoarGenerator;
+use Drupal\Tests\UnitTestCase;
+
 /**
  * Simple test to ensure that asserts pass.
  *
@@ -19,7 +20,7 @@ class AwesomeTest extends UnitTestCase {
   }
 
   public function testGetRoar() {
-    $this->assertEquals('3 - Woah, you got the exact number I was thinking of!', $this->unit->getRoar(3));
+    $this->assertEquals('3 - Woah, you got the exact number I was thinking of!', getRoar(3));
   }
 //  /**
 //   * @covers Drupal\awesome\Jurassic\RoarGenerator::getRoar

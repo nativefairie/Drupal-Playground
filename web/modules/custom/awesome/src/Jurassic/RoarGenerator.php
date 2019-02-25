@@ -28,7 +28,7 @@ class RoarGenerator
     public function generateRandomNumber()
     {
         try {
-            $randomNumber = random_int(1, 100);
+            $randomNumber = random_int(1, 10);
         }
         catch (\Exception $e) {
         }
@@ -41,14 +41,14 @@ class RoarGenerator
 //        $key = 'roar_'.$enteredNumber;
 
 //        if($this->useCache && $store->has($key)) {
-//            return $store->get($key);
+//            return $store->get($key);ss
 //        }
 
         $expectedNumber = $this->generateRandomNumber();
 
         if($expectedNumber - 15 <= $enteredNumber && $enteredNumber <= $expectedNumber + 15 ) {
 
-            $string =  $expectedNumber.' was the number I was thinking of, but '.$enteredNumber.' was close :) <br>BTW: hit ctrl+R to see cache in action!';
+            $string =  $expectedNumber.' was the number I was thinking of, but '.$enteredNumber.' was close :)';
 //            $store->set($key, $string);
             return $string;
         } elseif( $expectedNumber == $enteredNumber) {
@@ -57,7 +57,7 @@ class RoarGenerator
 //            $store->set($key, $string);
             return $string;
         } else {
-            $string =  $expectedNumber.' was the number I was thinking of. '.$enteredNumber.' wasn\'t too close :) <br>BTW: hit ctrl+R to see cache in action!';
+            $string =  $expectedNumber.' was the number I was thinking of. '.$enteredNumber.' wasn\'t too close :)';
 //            $store->set($key, $string);
             return $string;
         }

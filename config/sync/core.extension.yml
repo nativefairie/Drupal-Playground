@@ -4,6 +4,7 @@ module:
   big_pipe: 0
   block: 0
   block_content: 0
+  block_example: 0
   breakpoint: 0
   ckeditor: 0
   color: 0
@@ -11,9 +12,11 @@ module:
   config: 0
   config_devel: 0
   config_entity_example: 0
+  config_translation: 0
   contact: 0
   content_entity_example: 0
   contextual: 0
+  cron_example: 0
   datetime: 0
   dblog: 0
   devel: 0
@@ -31,15 +34,19 @@ module:
   kint: 0
   language: 0
   link: 0
+  locale: 0
+  menu_example: 0
   menu_ui: 0
   migrate: 0
   migrate_drupal: 0
   migrate_plus: 0
   migrate_source_csv: 0
   migrate_tools: 0
+  monolog: 0
   node: 0
   options: 0
   page_cache: 0
+  page_example: 0
   path: 0
   quickedit: 0
   rdf: 0
@@ -55,6 +62,7 @@ module:
   views_ui: 0
   webprofiler: 0
   menu_link_content: 1
+  content_translation: 10
   views: 10
   standard: 1000
 theme:

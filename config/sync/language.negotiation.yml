@@ -4,10 +4,10 @@ url:
   source: path_prefix
   prefixes:
     en: en
-    ro: ro
+    ja: ja
   domains:
     en: ''
-    ro: ''
+    ja: ''
 selected_langcode: site_default
 _core:
   default_config_hash: uEePITI9tV6WqzmsTb7MfPCi5yPWXSxAN1xeLcYFQbM
