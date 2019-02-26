@@ -25,40 +25,25 @@ class RoarGenerator
         $this->useCache = $useCache;
     }
 
-    public function generateRandomNumber()
-    {
-        try {
-            $randomNumber = random_int(1, 10);
-        }
-        catch (\Exception $e) {
-        }
-        return $randomNumber;
-    }
-
     public function getRoar($enteredNumber)
     {
-//        $store = $this->keyValueFactory->get('dino');
-//        $key = 'roar_'.$enteredNumber;
 
-//        if($this->useCache && $store->has($key)) {
-//            return $store->get($key);ss
-//        }
+        $store = $this->keyValueFactory->get('dino');
+        $key = 'roar_'.$enteredNumber;
 
-        $expectedNumber = $this->generateRandomNumber();
+        if($this->useCache && $store->has($key)) {
+          return $store->get($key);
+        }
 
-        if($expectedNumber - 15 <= $enteredNumber && $enteredNumber <= $expectedNumber + 15 ) {
+        sleep(2);
 
-            $string =  $expectedNumber.' was the number I was thinking of, but '.$enteredNumber.' was close :)';
-//            $store->set($key, $string);
-            return $string;
-        } elseif( $expectedNumber == $enteredNumber) {
-
-            $string =  $expectedNumber .' - Woah, you got the exact number I was thinking of!';
-//            $store->set($key, $string);
+        if($enteredNumber > 10) {
+            $string =  'R'.str_repeat('O', 10).'AR';
+            $store->set('roar_10', $string);
             return $string;
         } else {
-            $string =  $expectedNumber.' was the number I was thinking of. '.$enteredNumber.' wasn\'t too close :)';
-//            $store->set($key, $string);
+            $string = $string =  'R'.str_repeat('O', $enteredNumber).'AR';
+            $store->set($key, $string);
             return $string;
         }
     }

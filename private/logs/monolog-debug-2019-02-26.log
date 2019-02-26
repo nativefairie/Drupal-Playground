@@ -1,0 +1,75 @@
+[2019-02-26 10:02:07] system.INFO: monolog module installed. {"%module":"monolog"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:07] system.INFO: page_cache module installed. {"%module":"page_cache"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:07] system.INFO: rdf module installed. {"%module":"rdf"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:08] system.INFO: search module installed. {"%module":"search"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:08] system.INFO: file module installed. {"%module":"file"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:09] system.INFO: webprofiler module installed. {"%module":"webprofiler"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:09] system.INFO: filter module installed. {"%module":"filter"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:10] system.INFO: text module installed. {"%module":"text"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:10] system.INFO: options module installed. {"%module":"options"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:10] system.INFO: block module installed. {"%module":"block"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:11] system.INFO: block_content module installed. {"%module":"block_content"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:12] system.INFO: node module installed. {"%module":"node"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:12] system.INFO: breakpoint module installed. {"%module":"breakpoint"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:13] system.INFO: editor module installed. {"%module":"editor"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:13] system.INFO: ckeditor module installed. {"%module":"ckeditor"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:13] system.INFO: color module installed. {"%module":"color"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:14] system.INFO: comment module installed. {"%module":"comment"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:15] system.INFO: language module installed. {"%module":"language"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:16] system.INFO: locale module installed. {"%module":"locale"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:16] system.INFO: config_translation module installed. {"%module":"config_translation"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:17] system.INFO: content_translation module installed. {"%module":"content_translation"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:18] system.INFO: contextual module installed. {"%module":"contextual"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:18] system.INFO: datetime module installed. {"%module":"datetime"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:19] system.INFO: dblog module installed. {"%module":"dblog"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:19] system.INFO: field_ui module installed. {"%module":"field_ui"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:20] system.INFO: history module installed. {"%module":"history"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:21] system.INFO: taxonomy module installed. {"%module":"taxonomy"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:21] system.INFO: help module installed. {"%module":"help"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:22] system.INFO: image module installed. {"%module":"image"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:22] system.INFO: link module installed. {"%module":"link"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:23] system.INFO: views module installed. {"%module":"views"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:24] system.INFO: menu_link_content module installed. {"%module":"menu_link_content"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:24] system.INFO: menu_ui module installed. {"%module":"menu_ui"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:25] system.INFO: migrate module installed. {"%module":"migrate"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:25] system.INFO: migrate_drupal module installed. {"%module":"migrate_drupal"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:26] system.INFO: path module installed. {"%module":"path"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:26] system.INFO: quickedit module installed. {"%module":"quickedit"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:27] system.INFO: toolbar module installed. {"%module":"toolbar"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:27] system.INFO: shortcut module installed. {"%module":"shortcut"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:28] system.INFO: tour module installed. {"%module":"tour"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:29] system.INFO: update module installed. {"%module":"update"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:29] system.INFO: views_ui module installed. {"%module":"views_ui"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:30] system.INFO: examples module installed. {"%module":"examples"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:30] system.INFO: block_example module installed. {"%module":"block_example"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:31] system.INFO: config_entity_example module installed. {"%module":"config_entity_example"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:31] system.INFO: content_entity_example module installed. {"%module":"content_entity_example"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:32] system.INFO: cron_example module installed. {"%module":"cron_example"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:32] system.INFO: menu_example module installed. {"%module":"menu_example"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:33] system.INFO: page_example module installed. {"%module":"page_example"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:34] system.INFO: migrate_plus module installed. {"%module":"migrate_plus"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:34] system.INFO: migrate_tools module installed. {"%module":"migrate_tools"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:35] system.INFO: migrate_source_csv module installed. {"%module":"migrate_source_csv"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:36] system.INFO: awesome module installed. {"%module":"awesome"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:36] system.INFO: stable theme installed. {"%theme":"stable"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:36] system.INFO: classy theme installed. {"%theme":"classy"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:36] system.INFO: bartik theme installed. {"%theme":"bartik"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:36] system.INFO: seven theme installed. {"%theme":"seven"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:36] system.INFO: bootstrap theme installed. {"%theme":"bootstrap"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:36] system.INFO: awesome theme installed. {"%theme":"awesome"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:02:46] system.INFO: standard module installed. {"%module":"standard"} {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:03:34] cron.NOTICE: Cron run completed. [] {"referer":"","ip":"127.0.0.1","request_uri":"http://:/default/","uid":0,"user":""}
+[2019-02-26 10:07:58] page not found.WARNING: /themes/custom/Awesome/logo.svg {"@uri":"/themes/custom/Awesome/logo.svg"} {"referer":"http://drupal.docker.localhost:82/","ip":"172.19.0.3","request_uri":"http://drupal.docker.localhost:82/themes/custom/Awesome/logo.svg","uid":0,"user":""}
+[2019-02-26 10:08:30] user.NOTICE: Login attempt failed for admin. {"%user":"admin"} {"referer":"http://drupal.docker.localhost:82/en/user/login","ip":"172.19.0.3","request_uri":"http://drupal.docker.localhost:82/en/user/login","uid":0,"user":""}
+[2019-02-26 10:08:34] user.NOTICE: Login attempt failed for admin. {"%user":"admin"} {"referer":"http://drupal.docker.localhost:82/en/user/login","ip":"172.19.0.3","request_uri":"http://drupal.docker.localhost:82/en/user/login","uid":0,"user":""}
+[2019-02-26 10:08:48] user.NOTICE: Login attempt failed for admin. {"%user":"admin"} {"referer":"http://drupal.docker.localhost:82/en/user/login","ip":"172.19.0.3","request_uri":"http://drupal.docker.localhost:82/en/user/login","uid":0,"user":""}
+[2019-02-26 10:09:12] user.NOTICE: Login attempt failed for admin. {"%user":"admin"} {"referer":"http://drupal.docker.localhost:82/en/user/login","ip":"172.19.0.3","request_uri":"http://drupal.docker.localhost:82/en/user/login","uid":0,"user":""}
+[2019-02-26 10:09:22] user.NOTICE: Login attempt failed from 172.19.0.3. {"%ip":"172.19.0.3"} {"referer":"http://drupal.docker.localhost:82/en/user/login","ip":"172.19.0.3","request_uri":"http://drupal.docker.localhost:82/en/user/login","uid":0,"user":""}
+[2019-02-26 10:09:59] user.NOTICE: Login attempt failed for admin. {"%user":"admin"} {"referer":"http://drupal.docker.localhost:82/en/user/login","ip":"172.19.0.3","request_uri":"http://drupal.docker.localhost:82/en/user/login","uid":0,"user":""}
+[2019-02-26 10:10:23] user.NOTICE: Password reset instructions mailed to admin at admin@example.com. {"%name":"admin","%email":"admin@example.com"} {"referer":"http://drupal.docker.localhost:82/en/user/password","ip":"172.19.0.3","request_uri":"http://drupal.docker.localhost:82/en/user/password","uid":0,"user":""}
+[2019-02-26 10:10:24] page not found.WARNING: /themes/custom/Awesome/logo.svg {"@uri":"/themes/custom/Awesome/logo.svg"} {"referer":"http://drupal.docker.localhost:82/en/user/login","ip":"172.19.0.3","request_uri":"http://drupal.docker.localhost:82/themes/custom/Awesome/logo.svg","uid":0,"user":""}
+[2019-02-26 10:10:57] user.NOTICE: New user: drupal <drupal@drupal.com>. {"%name":"drupal","%email":"<drupal@drupal.com>","type":"[object] (Drupal\\Core\\GeneratedLink: \"<a href=\\\"/en/user/4/edit\\\" hreflang=\\\"en\\\">Edit</a>\")"} {"referer":"http://drupal.docker.localhost:82/en/user/register","ip":"172.19.0.3","request_uri":"http://drupal.docker.localhost:82/en/user/register","uid":0,"user":""}
+[2019-02-26 10:10:58] page not found.WARNING: /themes/custom/Awesome/logo.svg {"@uri":"/themes/custom/Awesome/logo.svg"} {"referer":"http://drupal.docker.localhost:82/en","ip":"172.19.0.3","request_uri":"http://drupal.docker.localhost:82/themes/custom/Awesome/logo.svg","uid":0,"user":""}
+[2019-02-26 10:11:16] page not found.WARNING: /themes/custom/Awesome/logo.svg {"@uri":"/themes/custom/Awesome/logo.svg"} {"referer":"http://drupal.docker.localhost:82/en/user/login","ip":"172.19.0.3","request_uri":"http://drupal.docker.localhost:82/themes/custom/Awesome/logo.svg","uid":0,"user":""}
+[2019-02-26 10:11:23] user.NOTICE: Login attempt failed for drupal. {"%user":"drupal"} {"referer":"http://drupal.docker.localhost:82/en/user/login","ip":"172.19.0.3","request_uri":"http://drupal.docker.localhost:82/en/user/login","uid":0,"user":""}
+[2019-02-26 10:11:41] user.NOTICE: Login attempt failed for drupal. {"%user":"drupal"} {"referer":"http://drupal.docker.localhost:82/en/user/login","ip":"172.19.0.3","request_uri":"http://drupal.docker.localhost:82/en/user/login","uid":0,"user":""}
