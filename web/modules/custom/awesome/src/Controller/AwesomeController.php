@@ -12,7 +12,9 @@ use Drupal\Core\Controller\ControllerBase;
 use Drupal\awesome\Jurassic\RoarGenerator;
 use Drupal\Core\Datetime\DateFormatter;
 use Drupal\Core\Datetime\DateFormatterInterface;
+use Drupal\Core\Entity\EntityStorageException;
 use Drupal\examples\Utility\DescriptionTemplateTrait;
+use Drupal\user\Entity\User;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -91,6 +93,8 @@ class AwesomeController extends ControllerBase
            */
         }
       }
+
+
       $build['table']['#rows'] = $rows;
       $build['table']['#header'] = $header;
       $build['#attached']['library'][] = 'awesome/awesome_libraries';

@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * @file
+ * Contains usercreation.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function usercreation_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the usercreation module.
+    case 'help.page.usercreation':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Create a user in case you get locked outside when drush SI') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+/**
+ * Implements hook_install.
+ */
+function usercreation_install() {
+  $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $user = \Drupal\user\Entity\User::create();
+
+  //Mandatory settings
+  $user->setPassword('admin2');
+  $user->enforceIsNew();
+  $user->setEmail('admin2@drupal.com');
+  $user->setUsername('admin2'); //This username must be unique and accept only a-Z,0-9, - _ @ .
+  $user->addRole('administrator');
+  //Optional settings
+  $user->set("init", 'admin2');
+  $user->set("langcode", $language);
+  $user->set("preferred_langcode", $language);
+  $user->set("preferred_admin_langcode", $language);
+  //$user->set("setting_name", 'setting_value');
+  $user->activate();
+
+  //Save user
+  $response = $user->save();
+
+  return $response;
+}

@@ -1,0 +1,5 @@
+name: 'UserCreation'
+type: module
+description: 'Create a user in case you get locked outside when drush SI'
+core: 8.x
+package: 'Custom'

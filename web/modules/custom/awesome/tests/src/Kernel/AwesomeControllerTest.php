@@ -2,7 +2,7 @@
 
 namespace Drupal\Tests\awesome\Kernel;
 
-use Drupal\awesome\Controller\AwesomeController;
+use Drupal\awesome\Controller\UserCreationController;
 use Drupal\KernelTests\Core\Entity\EntityKernelTestBase;
 use Drupal\node\Entity\Node;
 use Drupal\node\Entity\NodeType;
@@ -25,7 +25,7 @@ class AwesomeControllerTest extends EntityKernelTestBase {
   /**
    * The controller under test.
    *
-   * @var \Drupal\awesome\Controller\AwesomeController
+   * @var \Drupal\awesome\Controller\UserCreationController
    */
   private $controllerUnderTest;
 
@@ -39,7 +39,7 @@ class AwesomeControllerTest extends EntityKernelTestBase {
     $this->installConfig(['system', 'field']);
 
 //    $this->getMockBuilder('Drupal\awesome\Jurassic\RoarGenerator')->disableOriginalConstructor()->getMock();
-    $this->controllerUnderTest = AwesomeController::create($this->container);
+    $this->controllerUnderTest = UserCreationController::create($this->container);
 
   }
 
